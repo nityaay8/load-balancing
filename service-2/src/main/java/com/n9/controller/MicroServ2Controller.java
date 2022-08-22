@@ -13,7 +13,7 @@ public class MicroServ2Controller {
     @Value("${server.port}")
     private int port;
 
-    @GetMapping("serv2")
+    @GetMapping("hello")
     public ResponseEntity hello(){
         return ResponseEntity.ok("hello from service 2, using the port : "+port);
     }
